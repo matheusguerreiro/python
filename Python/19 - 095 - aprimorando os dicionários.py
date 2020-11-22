@@ -13,7 +13,7 @@ while True:
     qPartidas = int(input(f'Quantas partidas {jogador["nome"]} jogou? '))
     for c in range(0, qPartidas):
         print(f'Gols na {c+1}ª partida: ', end='')
-        gols.append(randint(0, 5))
+        gols.append(randint(0, 3))
         print(gols[c])
     jogador['gols'] = gols[:]
     jogador['total'] = sum(gols)
